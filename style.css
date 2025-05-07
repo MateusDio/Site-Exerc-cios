@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+* {
+    font-family: 'Alata';
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #2A2A2A;
+    align-items: s;
+    color: #f3f3f3;
+
+}
+
+#inicio {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/9070324cdfc07c68d60eed0c39e77573.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+
+
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    background-color: #2A2A2A;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 40px;
+    color: #F3F3F3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    font-size: 20px;
+    background-size: cover;
+    background-position: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#cards {
+    background-color: #F3F3F3;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 170px;
+    height: 90px;
+    border: 2px solid #2A2A2A;
+    transition: width 0.3s ease, height 0.3s ease;
+    position: relative; 
+    display: inline;
+}
+
+#cards:hover {
+    width: 200px;
+    height: 150px;
+}
+
+h3 {
+    color: #2A2A2A;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: #2A2A2A;
+    color: #F3F3F3;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0; 
+    visibility: hidden; 
+    position: absolute; 
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+}
+
+#cards:hover button {
+    opacity: 1; 
+    visibility: visible; 
+}
+
+button:hover {
+    width: 160px;
+    height: 50px;
+    background-color: #f3f3f3;
+    color: #2A2A2A;
+    border: 1px solid #2A2A2A;
+    transition: 0.3s;
+}
+
+#lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-evenly;
+   
+    
+}
+
+h3{
+font-size: 15px;
+    
+}
+
+
+a {
+    color: rgb(0, 17, 255);
+    text-decoration: none;
+
+}
+
+
+#h1 {
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 20px 20px 20px rgb(0, 0, 0);
+
+}
