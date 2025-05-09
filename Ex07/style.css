@@ -12,7 +12,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-    background-color: #e94242;
+    background-color: #2A2A2A;
     color: #f3f3f3;
     display: flex;
     flex-direction: column;
@@ -170,54 +170,53 @@ button:hover {
     color: #ffffff;
 }
 
-@media (max-width: 768px) {
-    header {
-        font-size: 16px;
-        padding: 0 20px;
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
     }
 
-    button {
+    header {
+        height: 75px;
+        padding: 0 12px;
+    }
+
+    header h1 {
+        font-size: 1.1rem;
+    }
+
+    header a {
+        font-size: 0.85rem;
+        right: 10px;
+    }
+
+    #inicio {
+        padding-top: 95px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #fundo {
+        width: 90%;
+        height: 300px;
+        padding: 12px 10px;
+        font-size: 0.9rem;
+        margin-top: 20px;
+    }
+
+    input[type="text"] {
         width: 100%;
-        max-width: 200px;
-        height: 50px;
         font-size: 14px;
+        padding: 8px;
     }
 
     .botoes {
         flex-direction: column;
-        align-items: center;
-    }
-
-    #lista-container {
-        max-width: 90%;
-    }
-
-    .lista-item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .lista-item button {
-        margin-top: 10px;
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 16px;
-    }
-
-    #fundo {
-        padding: 15px;
-    }
-
-    input[type="text"] {
-        font-size: 14px;
+        gap: 8px;
     }
 
     button {
         font-size: 14px;
-        height: 45px;
+        padding: 10px;
+        width: 100%;
     }
 }
