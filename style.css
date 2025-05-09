@@ -133,3 +133,36 @@ button:hover {
     color: #2A2A2A;
     border: 1px solid #2A2A2A;
 }
+
+@media (max-width: 768px) {
+    header {
+        font-size: 16px;
+        padding: 0 20px;
+        height: 60px;
+    }
+
+    #inicio {
+        padding-top: 70px;
+    }
+
+    .card-container {
+        width: 90%;
+        height: auto;
+    }
+
+    .card-front,
+    .card-back {
+        padding: 15px;
+    }
+
+    .card-text {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+        width: 100%;
+        max-width: 200px;
+        height: 60px;
+    }
+}
