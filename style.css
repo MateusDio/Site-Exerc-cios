@@ -135,34 +135,55 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-    header {
+      header {
         font-size: 16px;
         padding: 0 20px;
         height: 60px;
+        justify-content: space-between;
     }
 
+    header h1 {
+        font-size: 16px;
+        flex-grow: 1;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 70%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    header a {
+        position: static;
+        transform: none;
+        font-size: 14px;
+        margin-left: auto;
+    }
+
+
     #inicio {
-        padding-top: 70px;
+        padding-top: 80px;
     }
 
     .card-container {
-        width: 90%;
-        height: auto;
+        width: 90vw;
+        height: 250px; /* Mantém altura fixa necessária para o flip funcionar */
     }
 
     .card-front,
     .card-back {
-        padding: 15px;
+        padding: 10px;
     }
 
+    .card-front h3,
     .card-text {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     button {
         font-size: 14px;
         width: 100%;
-        max-width: 200px;
-        height: 60px;
+        max-width: 180px;
+        height: 50px;
     }
 }
