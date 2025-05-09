@@ -129,3 +129,28 @@ input[type="text"] {
     flex-direction: column;
 
   }
+
+  @media (max-width: 768px) {
+    header {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    header h1 {
+        font-size: 1.25rem;
+    }
+
+    header a {
+        right: 10px;
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+    #fundo {
+        padding: 15px;
+    }
+}
