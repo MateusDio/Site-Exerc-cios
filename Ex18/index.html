@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-    <title>Simulador de Sorteio</title>
+    <title>Cadastro com Validação</title>
 </head>
 
 <body>
     <header>
-        <h1>Simulador de Sorteio</h1>
+        <h1>Cadastro com Validação</h1>
         <a href="../index.html">Voltar</a>
     </header>
     <section id="inicio">
@@ -19,12 +19,15 @@
           
             <br>
             <form class="inputs">
-                <input type="text"  id="vmi" placeholder= "Digite um valor Mínimo">
-                   <input type="text"  id="vma" placeholder= "Digite um valor Máximo">
-               
+                <input type="text"  id="nom" placeholder= "Digite seu nome">
+                <input type="email"  id="ema" placeholder= "Digite seu email">
+                <input type="password"  id="sen" placeholder= "Digite sua senha">
+                   
             </form>
             <div class="botoes">
-                <button id="btn" type="button">Sortear</button>
+                
+                <button id="btn" type="button">Verificar</button>
+               
             </div>
             <p id="resultado"></p>
         </div>

@@ -1,21 +1,38 @@
-document.getElementById('ge').addEventListener('click', function() {
-    const letras = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    const numeros = '0123456789';
-    const simbolos = '!@#$%^&*()_+=[]{}|;:,.<>?';
-    const todos = letras + numeros + simbolos;
+const vmi = document.getElementById("vmi");
+const vma = document.getElementById("vma");
+const btn = document.getElementById("btn");
+const resultado = document.getElementById("resultado");
 
-    const tamanho = parseInt(document.getElementById('tam').value);
-    let senha = '';
 
-    if (!tamanho || tamanho < 4) {
-        document.getElementById('resultado').innerText = 'Informe um tamanho válido (mínimo 4).';
-        return;
+btn.addEventListener("click", function () {
+    resultado.textContent = "";
+
+    const a = parseInt(vmi.value);
+    const b = parseInt(vma.value);
+
+   
+    if (vmi.value.trim() === "" || vma.value.trim() === "") {
+        alert("Erro! O campo está vazio!!!!");
+
+    } else if (isNaN(a) || isNaN(b)) {
+        alert("Erro! Coloque um número válido!!!");
+
+    } else {
+            const numeroAleatorio = Math.floor(Math.random() * (b - a + 1)) + 2;
+            resultado.textContent = `Número sorteado = ${numeroAleatorio} `;  
+
+            
     }
+});
 
-    for (let i = 0; i < tamanho; i++) {
-        const caractere = todos.charAt(Math.floor(Math.random() * todos.length));
-        senha += caractere;
-    }
+vmi.addEventListener("click", function () {
+    resultado.textContent = "";
 
-    document.getElementById('resultado').innerText = `Senha gerada: ${senha}`;
+        
+});
+
+vma.addEventListener("click", function () {
+    resultado.textContent = "";
+
+        
 });

@@ -6,25 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-    <title>Simulador de Sorteio</title>
+    <title>Jogo de Advinhação</title>
 </head>
 
 <body>
     <header>
-        <h1>Simulador de Sorteio</h1>
+        <h1>Jogo de Advinhação</h1>
         <a href="../index.html">Voltar</a>
     </header>
     <section id="inicio">
         <div id="fundo">
-          
+          <h3>Advinhe um número entre 1 e 10:</h3> <p id="vida"> 3 chances</p>
             <br>
             <form class="inputs">
-                <input type="text"  id="vmi" placeholder= "Digite um valor Mínimo">
-                   <input type="text"  id="vma" placeholder= "Digite um valor Máximo">
-               
+                <input type="text"  id="num" placeholder= "Digite um número">
+           
             </form>
             <div class="botoes">
-                <button id="btn" type="button">Sortear</button>
+                
+                <button id="btn" type="button">Advinhar</button>
+                <button id="btn1" type="button">Reiniciar</button>
+               
             </div>
             <p id="resultado"></p>
         </div>
