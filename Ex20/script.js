@@ -22,27 +22,27 @@ btn.addEventListener("click", function () {
     } else if (isNaN(a) || isNaN(b) || isNaN(c)) {
         alert("Erro! Coloque uma nota válida!!!");
     } else if ( d <= 5) {
-        resultado.textContent = "Reprovado!";
+        resultado.textContent = `Nota: ${d} ! Reprovado!`;
     } else if ( d <= 6.9) {
-        resultado.textContent = "Recuperação!";
+        resultado.textContent = `Nota: ${d} ! Recuperação!`;
     } else if ( d >= 7) {
-        resultado.textContent = "Aprovado!";
+        resultado.textContent = `Nota: ${d} ! Aprovado!`;
     } 
 });
 
 nt1.addEventListener("click", function () {
     resultado.textContent = "";
-    nt1.value = "";
+    
 });
 
 nt2.addEventListener("click", function () {
     resultado.textContent = "";
-    nt2.value = "";
+    
 });
 
 nt2.addEventListener("click", function () {
     resultado.textContent = "";
-    nt1.value = "";
+    ;
 });
 
 

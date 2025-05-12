@@ -19,6 +19,13 @@ btn.addEventListener("click", function () {
     }
 });
 
+
+
 texto.addEventListener("click", function () {
     resultado.textContent = "";
+});
+
+btn1.addEventListener("click", function () {
+    resultado.textContent = "";
+    texto.value = "";
 });

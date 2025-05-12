@@ -8,6 +8,14 @@
     box-sizing: border-box;
 }
 
+.porcentagens {
+    margin-top: 20px;
+}
+
+.porcentagens p {
+    margin: 5px 0;
+}
+
 html,
 body {
     height: 100%;
