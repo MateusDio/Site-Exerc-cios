@@ -8,7 +8,7 @@ const pct1 = document.getElementById("pct1");
 const pct2 = document.getElementById("pct2");
 const pct3 = document.getElementById("pct3");
 
-let votos = [0, 0, 0]; // [opção 1, opção 2, opção 3]
+let votos = [0, 0, 0]; 
 
 function atualizarPorcentagens() {
     const total = votos[0] + votos[1] + votos[2];

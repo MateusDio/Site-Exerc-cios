@@ -19,8 +19,3 @@ cal.addEventListener("click", function () {
         }
     }
 });
-
-cal.addEventListener("click", function () {
-resultado.textContent = "";
-num.value = "";
-})
