@@ -1,5 +1,6 @@
 const texto = document.getElementById("texto");
 const btn = document.getElementById("btn");
+const btn1 = document.getElementById("btn1");
 const resultado = document.getElementById("resultado");
 
 btn.addEventListener("click", function () {
@@ -21,4 +22,9 @@ btn.addEventListener("click", function () {
 
 texto.addEventListener("click", function () {
     resultado.textContent = "";
+});
+
+btn1.addEventListener("click", function () {
+    resultado.textContent = "";
+    texto.value = "";
 });

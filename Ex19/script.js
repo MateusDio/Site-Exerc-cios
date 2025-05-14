@@ -6,27 +6,31 @@ const resultado = document.getElementById("resultado");
 
 btn1.disabled = true;
 let chances = 3;
+let numA = gerarNumero();
+
+function gerarNumero() {
+    return Math.floor(Math.random() * 10) + 1; 
+}
 
 btn.addEventListener("click", function () {
     resultado.textContent = "";
 
     const a = parseInt(num.value);
-    const numA = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
 
     if (num.value.trim() === "") {
-        alert("Erro! O campo está vazio!!!!");
+        alert("Erro! O campo está vazio!");
     } else if (isNaN(a)) {
-        alert("Erro! Coloque um número válido!!!");
+        alert("Erro! Coloque um número válido!");
     } else if (a === numA) {
-        resultado.textContent = "Você acertou!";
-        vida.textContent = `${chances} chances`;
+        resultado.textContent = "Você acertou! Aperte 'Reiniciar' para jogar novamente!";
+        vida.textContent = `${chances} chances restantes`;
         btn.disabled = true;
         btn1.disabled = false;
     } else {
         chances--;
         if (chances > 0) {
-            vida.textContent = `${chances} chances`;
-            resultado.textContent = "Tente novamente!!";
+            vida.textContent = `${chances} chances restantes`;
+            resultado.textContent = "Tente novamente!";
         } else {
             vida.textContent = "0 chances";
             resultado.textContent = `Você perdeu! O número era ${numA}`;
@@ -43,6 +47,7 @@ num.addEventListener("click", function () {
 
 btn1.addEventListener("click", function () {
     chances = 3;
+    numA = gerarNumero(); // novo número gerado somente aqui
     vida.textContent = "3 chances";
     resultado.textContent = "";
     num.value = "";

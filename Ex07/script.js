@@ -13,7 +13,6 @@ adcButton.addEventListener("click", function () {
         return;
     }
 
-   
     const itemDiv = document.createElement("div");
     itemDiv.classList.add("lista-item");
 
@@ -21,7 +20,6 @@ adcButton.addEventListener("click", function () {
     nomeSpan.textContent = `${nome} - ${quantidade}`;
     itemDiv.appendChild(nomeSpan);
 
-    
     const removeButton = document.createElement("button");
     removeButton.textContent = "Remover";
     removeButton.addEventListener("click", function () {
@@ -29,10 +27,8 @@ adcButton.addEventListener("click", function () {
     });
     itemDiv.appendChild(removeButton);
 
-   
     listaContainer.appendChild(itemDiv);
 
-   
     nomeInput.value = "";
     quantidadeInput.value = "";
 });

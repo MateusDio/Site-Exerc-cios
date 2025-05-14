@@ -34,7 +34,7 @@ kel.addEventListener("click", function () {
         alert("Erro! Coloque um número válido!!!");
     } else {
             const c = d + 273.15;
-            resultado.textContent = `Em Fahrenheit = ${c.toFixed(2)} `;  
+            resultado.textContent = `Em Kelsius = ${c.toFixed(2)} `;  
        
     }
 });

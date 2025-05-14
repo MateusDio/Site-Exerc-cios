@@ -40,9 +40,9 @@ nt2.addEventListener("click", function () {
     nt2.value = "";
 });
 
-nt2.addEventListener("click", function () {
+nt3.addEventListener("click", function () {
     resultado.textContent = "";
-    nt1.value = "";
+    nt3.value = "";
 });
 
 
