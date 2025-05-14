@@ -136,6 +136,7 @@ button:hover {
     border: 1px solid #2A2A2A;
 }
 
+
 @media (max-width: 1200px) {
     #lista {
         grid-template-columns: repeat(4, 1fr); 
